@@ -11,6 +11,7 @@
  * };
  */
 class Solution {
+//Logic: implement DFS as a recursive function and keep appending current node value to the current path
 public:
     vector<string> all_paths;  // to store all paths in string format for output
     
