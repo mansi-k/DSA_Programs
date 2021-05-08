@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/find-the-town-judge/
+
 class Solution {
 // Logic : Each person is a graph node. We need to find a single sink node which has incoming edges from all other nodes except itself.
 public:
