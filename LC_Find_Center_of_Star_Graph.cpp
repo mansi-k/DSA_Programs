@@ -1,7 +1,7 @@
 // https://leetcode.com/problems/find-center-of-star-graph/
 
 class Solution {
-// Logic : As the input is a valid star graph, just count the occurences of each vertex and return vertec with count n-1. But since it is given that the vector of edges is n-1, we can just check which vertex repeats in the first 2 edges and return it.
+// Logic : As the input is a valid star graph, just count the occurences of each vertex and return vertex with max count >= n-1. But since it is given that the vector of edges is of length n-1 (no edges repeat), we can just check which vertex repeats in the first 2 edges and return it.
 public:
     int findCenter(vector<vector<int>>& edges) {
         ios_base::sync_with_stdio(false);
