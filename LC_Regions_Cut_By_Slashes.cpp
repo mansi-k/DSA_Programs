@@ -41,14 +41,14 @@ public:
                             vrtx_grp[*jt] = bg; // assign b's group to these nodes
                             grp_vrtx[bg].push_back(*jt); // merge a's group with b's group
                         }
-                        grp_vrtx.erase(ag); // delete a's group number
+                        grp_vrtx.erase(ag); // delete a's old group
                     }
                     else { // if a's group has equal or more number of nodes
                         for(auto jt=grp_vrtx[bg].begin();jt!=grp_vrtx[bg].end();jt++) { // get all nodes from b's group
                             vrtx_grp[*jt] = ag; // assign a's group to these nodes
                             grp_vrtx[ag].push_back(*jt); // merge b's group with a's group
                         }
-                        grp_vrtx.erase(bg); // delete b's group number
+                        grp_vrtx.erase(bg); // delete b's old group
                     }
                 }
             }
