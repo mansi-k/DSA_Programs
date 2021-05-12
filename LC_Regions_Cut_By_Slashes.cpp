@@ -1,7 +1,7 @@
 // https://leetcode.com/problems/regions-cut-by-slashes/
 
 class Solution {
-// Logic : Treat slashes and grid boundary as edges of a graph and count which edges form a cycle
+// Logic : Treat slashes and grid boundary as edges of a graph and count which edges form a cycle. Start from inner edges (given in input) and then boundary edges.
 public:
     vector<vector<pair<int,int>>> edges;
     int regionsBySlashes(vector<string>& grid) {
