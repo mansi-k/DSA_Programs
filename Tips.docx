@@ -1,0 +1,8 @@
+General :
+
+- Use ios_base::sync_with_stdio(false); cin.tie(NULL); for fast I/O.
+- Use cout << “\n”; instead of cout << endl;. endl is slower because it forces a flushing stream.
+- When debugging, use cout << endl; as the output stream will be flushed and thus be visible to you before the runtime error or infinite loop.
+- Prefer using arrays wherever possible.
+- Reserve capacity for vectors and initialize vectors using constructors whenever possible.
+- Use unordered maps whenever possible (if order does not matter) as it is faster (uses hashing, so constant time retrieval) whereas ordered map uses trees (log n retrieval time).
