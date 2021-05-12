@@ -1,7 +1,7 @@
 // https://leetcode.com/problems/map-of-highest-peak/
 
 class Solution {
-// Logic : Consider each cell as a node of a graph. Starting with water cells, apply BFS on unvisited nodes and assign value to the child nodes as p+1 where p is the peak value of the current node.
+// Logic : Consider each cell as a node of a graph and 4 adjacent cells as its children. Starting with water cells, apply BFS on unvisited nodes and assign value to the child nodes as p+1 where p is the peak value of the current node.
 public:
     vector<vector<int>> highestPeak(vector<vector<int>>& isWater) {
         int r = isWater.size();
