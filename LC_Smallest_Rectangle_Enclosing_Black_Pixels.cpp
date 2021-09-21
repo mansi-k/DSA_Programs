@@ -1,3 +1,5 @@
+// Apply DFS on cells having 1's, mark visited cells and simultaneously update the min and max values of x,y. The answer would be (maxx-minx)*(maxy-miny).
+
 class Solution {
 public:
     int minX = INT_MAX, minY=INT_MAX, maxX=INT_MIN, maxY=INT_MIN;
