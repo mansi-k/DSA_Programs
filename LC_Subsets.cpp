@@ -1,7 +1,8 @@
 // https://leetcode.com/problems/subsets/
 
 class Solution {
-// Logic : Generate binary bitmaps of 0 to 2^n where n=nums.length. If the ith position in the bitmap is 1, then include ith number from nums to the current subset.
+// Logic : Generate binary bitmaps of 0 to 2^n where n=nums.length. 
+// If the ith position in the bitmap is 1, then include ith number from nums to the current subset.
 public:
     vector<vector<int>> subsets(vector<int>& nums) {
         ios_base::sync_with_stdio(false); 
